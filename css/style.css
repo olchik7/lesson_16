@@ -1,0 +1,154 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+body{
+	font-family: "Lato";
+	color: #424551;
+    line-height: 160%;
+}
+.main-block {
+	padding: 50px 0px;
+}
+.main-block__container {
+    position: relative;
+}
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0 auto;
+	padding: 0 15px;
+}
+.body-main {
+    display: flex;
+    gap: 105px;
+    align-items: center;
+}
+.body-main__media {
+	flex: 0 0 33.333%;
+}
+.body-main__image {
+    max-width: 100%;
+}
+.body-main__content{
+	flex: 1 1 auto;
+}
+.body-main__title:not(:last-child) {
+    margin-bottom: 40px;
+}
+.title {
+    color: #1E212C;
+}
+.title__subtitle {
+	font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.title__main {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+}
+.form {
+	display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12.5px;
+    row-gap: 24px;
+}
+.form__field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    flex: 0 1 50%;
+    padding: 0 12.5px;
+}
+.form__input {
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    height: 52px;
+    padding: 13px 16px;
+}
+.form__field--area {
+    flex: 0 1 100%;
+}
+.form__input--area {
+    min-height: 128px;
+}
+.checkbox {
+    position: relative;
+    flex: 0 1 50%;
+    padding: 0px 15px;
+}
+.checkbox__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.checkbox__label {
+    cursor: pointer;
+    display: inline-flex;
+    gap: 10px;
+}
+.checkbox__input:checked + .checkbox__label::before {
+    background: #FF3F3A url("../img/check.svg") center / 70% no-repeat;
+	border: 1px solid #FF3F3A;
+}
+.checkbox__label::before {
+    content: "";
+    flex: 0 0 16px;
+    align-self: start;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #B3B7BC;
+    border-radius: 3px;
+    margin-top: 4px;
+}
+.checkbox__text {
+    align-self: center;
+    line-height: 160%;
+}
+.button {
+    flex: 0 1 50%;
+    align-self: center;
+    margin: 0px -15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    line-height: 1.25;
+    padding: 17px 117px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
